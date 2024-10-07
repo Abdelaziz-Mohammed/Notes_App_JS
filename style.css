@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-color: #9C27B0;
+}
+body {
+    background-color: #A9C9FF;
+    background-image: linear-gradient(135deg, #A9C9FF 0%, #FFBBEC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+.app h1 {
+    color: var(--main-color);
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.app h1 img {
+    width: 40px;
+}
+.app button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+.app button:hover {
+    opacity: 1;
+
+}
+.app button img {
+    width: 15px;
+}
+.app .notes-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.app .notes-content .note {
+    background-color: white;
+    width: 100%;
+    padding: 15px 25px 25px 15px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.3s;
+    position: relative;
+}
+.app .notes-content .note p.input-box {
+    min-height: 120px;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.app .notes-content .note p.input-box:focus {
+    outline: none;
+}
+.app .notes-content .note img {
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
